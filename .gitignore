@@ -1,2 +1,2 @@
-.xml
-logs/
+*.xml
+/logs
