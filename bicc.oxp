@@ -1,0 +1,17 @@
+doc("https://www.bicc.de/publications/by-category/all-issues/category/working-paper/")
+    //div[@class="search-publication-results"]
+        [./div[@class="search-publication-single"]:<item>
+			//p/a/{click/}
+			    //div[@class="tx-bicctools-pi3"]
+				    [? ./h1:<title=string(.)>]
+					[? ./h1:<publisher="bicc - Bonn International Center for Conversion">]
+					[? ./h1:<doctype="working paper">]
+					[? ./div[@class="publicationfield cover-field"]/img:<number=substring-before(substring-after(@title, 'WP_'),'.jpg')>]
+					[? ./div[@class="publicationfield date_from"]:<date_from=translate(normalize-space(substring-after(.,'Release date: ')),'-','/')>]
+					[? ./div[@class="publicationfield abstract-field"]:<abstract=normalize-space(.)>]
+					[? ./div[1]/ul/li/a:<url=concat('https://www.bicc.de/', @href)>]
+					[? ./div[1]/ul/li/a:<lang=string(.)>]
+					[? ./div[2]/ul/li/a:<author=string(replace(.,'PD Dr. |Prof. |Dr. ',''))>]
+					[? ./div[3]/ul/li/a:<topic=string(.)>]
+					[? ./div[4]/ul/li/a:<geoContext=string(.)>]
+		]
