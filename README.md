@@ -18,14 +18,15 @@ $ sudo apt install xvfb
 
 ### Get OXPath
 
-OXPath can be obtained from: [www.oxpath.org/download](http://www.oxpath.org/download)
+OXPath can be obtained from: [www.oxpath.org/download](http://www.oxpath.org/download) 
+
 Pick the latest version of the CLI jar and save it to a convenient location.
 
 ## Running the example
 
 ### With OXPath 2.0
 
-To run the example, fire up a command line and input the following command, where
+To run the example, fire up a command line where you extracted/cloned this repository to, and input the following command, where
 
 -   `-query bicc_WP.oxp`: reads the OXPath expression in the file `bicc_WP.oxp`
 -   `-logfile VerboseLog4j.properties`: uses the provided custom logging configuration file for more verbose logging (recommended for OXPath beginners)
@@ -59,7 +60,7 @@ $ java -jar oxpath-2.0-cli.jar -q bicc_WP.oxp -log VerboseLog4j.properties -xvfb
 
 ## License
 
-This project is licensed under the Apache 2.0 License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
 
 <!--The OXPath executable contained in this repository is licensed under Apache 2.0 License.-->
 
