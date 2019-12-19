@@ -1,6 +1,7 @@
 # Material for Code4Lib Paper on OXPath
 
-This repository contains accompanying material to our article submitted to the Code4Lib Journal.
+This repository contains accompanying material to our article "Web-Scraping for Non-Programmers: Introducing OXPath for Digital Library Metadata Harvesting" published in the Code4Lib Journal.  
+You can read the article [here](http://journal.code4lib.org/articles/13007).
 
 ## Getting Started
 
